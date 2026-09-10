@@ -61,4 +61,4 @@ Use the `contact-erik-hehrmann` skill. Short version: the screened form at `http
 
 ## Conduct
 
-The site sets no cookies and stores nothing in the browser. Fetch politely: one request per page is enough, and `llms-full.txt` replaces crawling. `/api/*` and `/mcp` allow 100 requests per minute per client IP; read the `RateLimit` response header and back off on a 429 with `Retry-After`. Errors on those paths are RFC 9457 `application/problem+json`.
+The site sets no cookies and stores nothing in the browser. Fetch politely: one request per page is enough, and `llms-full.txt` replaces crawling. `/api/*` and `/mcp` allow 100 requests per minute per client IP, counted by the edge instance serving the connection; read the `RateLimit` response header and treat a 429 with `Retry-After` as authoritative. Errors on those paths are RFC 9457 `application/problem+json`.
