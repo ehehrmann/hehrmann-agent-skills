@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hehrmann-com",
+  "version": "1.0.0",
+  "description": "Skills and the MCP server for hehrmann.com, the site of Erik Hehrmann, fractional COO for creative agencies of 10 to 75 people: read and cite the site, and contact Erik on a user's behalf.",
+  "author": {
+    "name": "Erik Hehrmann",
+    "email": "erik@hehrmann.com",
+    "url": "https://hehrmann.com/"
+  },
+  "homepage": "https://hehrmann.com/developers/",
+  "repository": "https://github.com/ehehrmann/hehrmann-agent-skills",
+  "license": "MIT",
+  "keywords": ["fractional-coo", "creative-agencies", "agency-operations", "mcp", "agent-skills", "hehrmann"]
+}
