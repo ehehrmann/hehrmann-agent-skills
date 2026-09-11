@@ -23,7 +23,7 @@ Not a fit: digital-performance, web-development, or SEO shops; day-to-day accoun
 Every public page has two representations at the same URL:
 
 1. HTML for browsers.
-2. Markdown for agents: send `Accept: text/markdown`, or append `index.md` to the page URL (for example `https://hehrmann.com/notes/timesheets/index.md`). Responses carry `Vary: Accept`.
+2. Markdown for agents: send `Accept: text/markdown`, add `?mode=agent`, append `index.md` to the page URL (for example `https://hehrmann.com/notes/timesheets/index.md`), or append `.md` (`https://hehrmann.com/services.md`). Responses carry `Vary: Accept`; each Markdown document opens with title, description, canonical, last-updated frontmatter.
 
 Whole-site files:
 
@@ -32,6 +32,7 @@ Whole-site files:
 - `https://hehrmann.com/sitemap.xml` · the canonical URL list.
 - `https://hehrmann.com/pricing.md` · the fee table for the seven engagements as one Markdown file.
 - `https://hehrmann.com/developers/` · endpoints, error format, rate limits, versioning; scoped index at `https://hehrmann.com/developers/llms.txt`.
+- Scoped indexes: `https://hehrmann.com/services/llms.txt` (engagements and fees) and `https://hehrmann.com/notes/llms.txt` (case studies).
 
 Canonical pages: `/` (thesis and method), `/services/` (seven engagement tiers with prices), `/notes/` (case studies), `/about/` (career ledger), `/endorsements/`, `/contact/`, `/privacy/`.
 
@@ -41,10 +42,10 @@ Streamable HTTP endpoint: `https://hehrmann.com/mcp`. No authentication. Server 
 
 Tools:
 
-- `list_pages` · canonical URLs from the sitemap.
+- `list_pages` · canonical URLs from the sitemap; optional `section`, for example `"notes"`.
 - `get_page` · one page as Markdown; argument `path`, for example `"/services/"`.
 - `search_site` · full-text search; arguments `query` and optional `limit` (1 to 8). Returns sections with the URL to cite.
-- `contact_instructions` · the contact route, fields, fit, and response time. Sends nothing.
+- `contact_instructions` · the contact route, fields, fit, and response time; optional `purpose` (`discovery-call`, `engagement`, `question`) adds guidance for the message. Sends nothing.
 
 Resources: every page as `text/markdown`, plus `llms.txt` and `llms-full.txt`.
 
