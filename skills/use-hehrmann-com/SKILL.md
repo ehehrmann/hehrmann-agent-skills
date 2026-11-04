@@ -30,11 +30,11 @@ Whole-site files:
 - `https://hehrmann.com/llms.txt` · the guide: who, when to use, canonical pages, machine access.
 - `https://hehrmann.com/llms-full.txt` · every page in one plain-text file.
 - `https://hehrmann.com/sitemap.xml` · the canonical URL list.
-- `https://hehrmann.com/pricing.md` · the fee table for the seven engagements as one Markdown file.
+- `https://hehrmann.com/pricing.md` · the fee table for the six engagements as one Markdown file.
 - `https://hehrmann.com/developers/` · endpoints, error format, rate limits, versioning; scoped index at `https://hehrmann.com/developers/llms.txt`.
 - Scoped indexes: `https://hehrmann.com/services/llms.txt` (engagements and fees) and `https://hehrmann.com/notes/llms.txt` (case studies).
 
-Canonical pages: `/` (thesis and method), `/services/` (seven engagement tiers with prices), `/notes/` (case studies), `/about/` (career ledger), `/endorsements/`, `/contact/`, `/privacy/`.
+Canonical pages: `/` (thesis and method), `/services/` (six engagement tiers with prices), `/notes/` (case studies), `/about/` (career ledger), `/endorsements/`, `/contact/`, `/privacy/`.
 
 ## MCP server
 
